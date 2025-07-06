@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data-Driven Wealth - Phase 1: Week 1</title>
+    <title>Data-Driven Wealth - Phase 1: Week 1 Blogs</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -56,44 +56,44 @@
         .btn-primary:hover {
             background-color: #3f46ad; /* Darker indigo on hover */
         }
-        .blog-post-template {
+        .blog-post-card { /* Renamed from blog-post-template for clarity */
             background-color: #ffffff;
             border-radius: 1rem;
             box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.05);
             padding: 2rem;
             border: 1px solid #e2e8f0;
-            height: 100%; /* Ensure cards in a grid have consistent height */
+            height: 100%;
             display: flex;
             flex-direction: column;
         }
-        .blog-post-template img {
+        .blog-post-card img {
             max-width: 100%;
             height: auto;
             border-radius: 0.75rem;
             margin-bottom: 1.5rem;
         }
-        .blog-post-template h3 {
-            font-size: 1.75rem; /* Slightly smaller for grid */
+        .blog-post-card h3 {
+            font-size: 1.75rem;
             font-weight: 600;
             color: #2d3748;
             margin-bottom: 1rem;
         }
-        .blog-post-template p {
-            font-size: 1rem; /* Slightly smaller for grid */
+        .blog-post-card p {
+            font-size: 1rem;
             line-height: 1.6;
             color: #4a5568;
             margin-bottom: 1rem;
-            flex-grow: 1; /* Allows content to push link to bottom */
+            flex-grow: 1;
         }
-        .blog-post-template a {
+        .blog-post-card a {
             color: #4c51bf;
             font-weight: 500;
             text-decoration: none;
             transition: color 0.3s ease;
-            margin-top: auto; /* Pushes link to bottom of card */
-            display: inline-block; /* Ensures padding/margin works */
+            margin-top: auto;
+            display: inline-block;
         }
-        .blog-post-template a:hover {
+        .blog-post-card a:hover {
             color: #3f46ad;
             text-decoration: underline;
         }
@@ -104,12 +104,13 @@
     <!-- Header and Navigation -->
     <header class="bg-white shadow-md py-4">
         <nav class="container flex justify-between items-center">
+            <!-- Links here go up two levels (../../) to reach the root directory -->
             <a href="../../index.html" class="text-3xl font-bold text-indigo-700">Data-Driven Wealth</a>
             <ul class="hidden md:flex space-x-6">
                 <li><a href="../../about.html" class="text-gray-700 hover:text-indigo-700 font-medium">About Me</a></li>
                 <li><a href="../../learning.html" class="text-gray-700 hover:text-indigo-700 font-medium">Learning Journey</a></li>
                 <li><a href="../../projects.html" class="text-gray-700 hover:text-indigo-700 font-medium">Projects</a></li>
-                <li><a href="../../faces.html" class="text-gray-700 hover:text-indigo-700 font-medium">Faces</a></li>
+                <li><a href="../../phases.html" class="text-gray-700 hover:text-indigo-700 font-medium">Phases</a></li>
                 <li><a href="../../consultation.html" class="text-gray-700 hover:text-indigo-700 font-medium">Consultation</a></li>
                 <li><a href="../../contact.html" class="text-gray-700 hover:text-indigo-700 font-medium">Contact</a></li>
             </ul>
@@ -120,7 +121,7 @@
         </nav>
     </header>
 
-    <!-- Phase 1: Week 1 Content -->
+    <!-- Phase 1: Week 1 Content (Blog Posts) -->
     <section class="py-16">
         <div class="container">
             <h2 class="section-title">Phase 1: Week 1 - Initial Explorations</h2>
@@ -129,54 +130,54 @@
             </p>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Blog Post Template 1 (for Week 1) -->
-                <div class="blog-post-template">
+                <!-- Blog Post Card 1 -->
+                <div class="blog-post-card">
                     <h3 class="mb-4">Setting Up My Data-Driven Finance Environment</h3>
                     <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Env+Setup" alt="Placeholder image for environment setup">
                     <p>
                         This week was all about getting the tools ready. I installed Python, set up my virtual environment, and configured Jupyter Notebooks for interactive coding. I also explored various IDEs to find the best fit for my workflow.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    <a href="week1/blog1.html" class="btn-primary inline-block text-sm">Read More &rarr;</a>
                 </div>
 
-                <!-- Blog Post Template 2 (for Week 1) -->
-                <div class="blog-post-template">
+                <!-- Blog Post Card 2 -->
+                <div class="blog-post-card">
                     <h3 class="mb-4">First Dive into Financial Data Sources</h3>
                     <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Data+Sources" alt="Placeholder image for data sources">
                     <p>
                         I spent time researching reliable financial data sources, both free and paid. This included exploring APIs for historical stock data, economic indicators, and company fundamentals. Understanding data availability is key.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    <a href="week1/blog2.html" class="btn-primary inline-block text-sm">Read More &rarr;</a>
                 </div>
 
-                <!-- Blog Post Template 3 (for Week 1) -->
-                <div class="blog-post-template">
+                <!-- Blog Post Card 3 -->
+                <div class="blog-post-card">
                     <h3 class="mb-4">Python Basics Refresher for Data Handling</h3>
                     <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Python+Basics" alt="Placeholder image for Python code snippets">
                     <p>
                         A quick refresher on Python fundamentals, focusing on data types, control flow, and functions essential for data manipulation. This ensured my coding foundation was strong for upcoming tasks.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    <a href="week1/blog3.html" class="btn-primary inline-block text-sm">Read More &rarr;</a>
                 </div>
 
-                <!-- Blog Post Template 4 (for Week 1) -->
-                <div class="blog-post-template">
+                <!-- Blog Post Card 4 -->
+                <div class="blog-post-card">
                     <h3 class="mb-4">Understanding Basic Financial Metrics</h3>
                     <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Financial+Metrics" alt="Placeholder image for financial metrics chart">
                     <p>
                         I reviewed core financial metrics like P/E ratio, EPS, and market capitalization. Grasping these concepts is fundamental before building models that utilize them.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    <a href="week1/blog4.html" class="btn-primary inline-block text-sm">Read More &rarr;</a>
                 </div>
 
-                <!-- Blog Post Template 5 (for Week 1) -->
-                <div class="blog-post-template">
+                <!-- Blog Post Card 5 -->
+                <div class="blog-post-card">
                     <h3 class="mb-4">Initial Thoughts on Project Scope</h3>
                     <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Project+Planning" alt="Placeholder image for project planning">
                     <p>
                         Began outlining potential project ideas for Phase 1, focusing on simple data analysis tasks that would allow me to apply my newly set up environment and refreshed Python skills.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer">Read More &rarr;</a>
+                    <a href="week1/blog5.html" class="btn-primary inline-block text-sm">Read More &rarr;</a>
                 </div>
             </div>
         </div>
