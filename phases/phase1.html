@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Driven Wealth - Phase 1: Foundations</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c; /* Darker text for titles */
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #4c51bf; /* Indigo line */
+            border-radius: 9999px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .btn-primary {
+            background-color: #4c51bf; /* Indigo */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #3f46ad; /* Darker indigo on hover */
+        }
+        .blog-post-template {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            height: 100%; /* Ensure cards in a grid have consistent height */
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-post-template img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .blog-post-template h3 {
+            font-size: 1.75rem; /* Slightly smaller for grid */
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .blog-post-template p {
+            font-size: 1rem; /* Slightly smaller for grid */
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 1rem;
+            flex-grow: 1; /* Allows content to push link to bottom */
+        }
+        .blog-post-template a {
+            color: #4c51bf;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-top: auto; /* Pushes link to bottom of card */
+            display: inline-block; /* Ensures padding/margin works */
+        }
+        .blog-post-template a:hover {
+            color: #3f46ad;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white shadow-md py-4">
+        <nav class="container flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-indigo-700">Data-Driven Wealth</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="about.html" class="text-gray-700 hover:text-indigo-700 font-medium">About Me</a></li>
+                <li><a href="learning.html" class="text-gray-700 hover:text-indigo-700 font-medium">Learning Journey</a></li>
+                <li><a href="projects.html" class="text-gray-700 hover:text-indigo-700 font-medium">Projects</a></li>
+                <li><a href="faces.html" class="text-gray-700 hover:text-indigo-700 font-medium">Faces</a></li>
+                <li><a href="consultation.html" class="text-gray-700 hover:text-indigo-700 font-medium">Consultation</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-indigo-700 font-medium">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button (optional, for future implementation) -->
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Phase 1 Content -->
+    <section class="py-16">
+        <div class="container">
+            <h2 class="section-title">Phase 1: Foundations of Data-Driven Finance</h2>
+            <p class="text-center text-lg mb-8">
+                In this phase, I explored the fundamental concepts of financial data, basic programming for analysis, and introductory machine learning techniques.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post Template 1 -->
+                <div class="blog-post-template">
+                    <h3 class="mb-4">Understanding Financial Data Structures</h3>
+                    <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Financial+Data" alt="Placeholder image for financial data structures">
+                    <p>
+                        This post dives into the various types of financial data, from time-series stock prices to fundamental company reports, and how they are structured for analysis. Understanding these structures is crucial for effective data processing.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Read More about Data Structures &rarr;</a>
+                </div>
+
+                <!-- Blog Post Template 2 -->
+                <div class="blog-post-template">
+                    <h3 class="mb-4">Introduction to Python for Financial Analysis</h3>
+                    <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Python+Code" alt="Placeholder image for Python code">
+                    <p>
+                        A beginner-friendly guide to using Python for basic financial calculations, data manipulation with Pandas, and simple visualizations with Matplotlib. This post highlights essential libraries and common workflows.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">View Python Basics Tutorial &rarr;</a>
+                </div>
+
+                <!-- Blog Post Template 3 -->
+                <div class="blog-post-template">
+                    <h3 class="mb-4">Basic Statistical Concepts in Finance</h3>
+                    <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Statistics+Graph" alt="Placeholder image for statistics graph">
+                    <p>
+                        Exploring key statistical measures like mean, median, standard deviation, and correlation, and their application in understanding financial markets and investment performance.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Learn More about Financial Statistics &rarr;</a>
+                </div>
+
+                <!-- Blog Post Template 4 -->
+                <div class="blog-post-template">
+                    <h3 class="mb-4">First Steps with Linear Regression for Stock Prediction</h3>
+                    <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Linear+Regression" alt="Placeholder image for linear regression model">
+                    <p>
+                        An introductory look at using linear regression, one of the simplest machine learning algorithms, to model relationships between financial variables and attempt basic stock price predictions.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Explore Linear Regression Example &rarr;</a>
+                </div>
+
+                <!-- Blog Post Template 5 -->
+                <div class="blog-post-template">
+                    <h3 class="mb-4">Setting Up Your Data Science Environment for Finance</h3>
+                    <img src="https://placehold.co/800x400/E0E7FF/4C51BF?text=Coding+Setup" alt="Placeholder image for coding environment setup">
+                    <p>
+                        A practical guide to setting up your development environment, including installing Python, Jupyter Notebooks, and essential libraries for financial data science.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Get Started with Your Setup &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <div class="container">
+            <p>&copy; 2025 Data-Driven Wealth. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
