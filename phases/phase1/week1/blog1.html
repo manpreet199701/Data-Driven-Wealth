@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data-Driven Wealth - [Blog Post Title]</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Data-Driven Wealth - Starting the 60-Day Data-Driven Wealth Challenge — Week 1</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light gray background */
+            background-color: #f0f4f8;
             color: #333;
         }
         .container {
-            max-width: 900px; /* Slightly narrower for blog content */
+            max-width: 900px;
             margin: 0 auto;
             padding: 1.5rem;
         }
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #1a202c; /* Darker text for titles */
+            color: #1a202c;
             margin-bottom: 2rem;
             text-align: center;
             position: relative;
@@ -35,7 +35,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background-color: #4c51bf; /* Indigo line */
+            background-color: #4c51bf;
             border-radius: 9999px;
         }
         .blog-content-area {
@@ -51,7 +51,7 @@
             height: auto;
             border-radius: 0.75rem;
             margin: 2rem 0;
-            display: block; /* Ensures image takes full width and centers */
+            display: block;
             margin-left: auto;
             margin-right: auto;
         }
@@ -82,6 +82,24 @@
             margin-bottom: 1.5rem;
             text-align: center;
         }
+        pre.code {
+            background:#f7fafc;
+            padding:1rem;
+            border-radius:.5rem;
+            overflow:auto;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+            font-size:0.95rem;
+            margin: 1rem 0;
+        }
+        .cta {
+            background: linear-gradient(90deg,#4c51bf,#6b46c1);
+            color: white;
+            display:inline-block;
+            padding:.6rem 1rem;
+            border-radius:.5rem;
+            text-decoration:none;
+            font-weight:600;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -89,7 +107,6 @@
     <!-- Header and Navigation -->
     <header class="bg-white shadow-md py-4">
         <nav class="container flex justify-between items-center">
-            <!-- Links here go up three levels (../../../) to reach the root directory -->
             <a href="../../../index.html" class="text-3xl font-bold text-indigo-700">Data-Driven Wealth</a>
             <ul class="hidden md:flex space-x-6">
                 <li><a href="../../../about.html" class="text-gray-700 hover:text-indigo-700 font-medium">About Me</a></li>
@@ -99,7 +116,6 @@
                 <li><a href="../../../consultation.html" class="text-gray-700 hover:text-indigo-700 font-medium">Consultation</a></li>
                 <li><a href="../../../contact.html" class="text-gray-700 hover:text-indigo-700 font-medium">Contact</a></li>
             </ul>
-            <!-- Mobile Menu Button (optional, for future implementation) -->
             <button class="md:hidden text-gray-700 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
@@ -109,51 +125,118 @@
     <!-- Blog Post Content -->
     <section class="py-16">
         <div class="container">
-            <h1 class="section-title">[Your Blog Post Title Here]</h1>
-            <p class="blog-meta">Published on [Date] by [Your Name]</p>
+            <h1 class="section-title">Starting the 60-Day Data-Driven Wealth Challenge — Week 1</h1>
+            <p class="blog-meta">Published on September 16, 2025 by Manpreet</p>
 
             <div class="blog-content-area">
-                <img src="https://placehold.co/900x450/E0E7FF/4C51BF?text=Blog+Hero+Image" alt="Descriptive image for blog post">
+                <img src="https://placehold.co/900x450/E0E7FF/4C51BF?text=Data-Driven+Wealth+Launch" alt="Data-Driven Wealth Launch">
 
-                <h2>Introduction to the Topic</h2>
+                <h2>Why I’m doing this</h2>
                 <p>
-                    This is the introductory paragraph of your blog post. Here, you can set the stage, introduce the problem or concept you're discussing, and briefly outline what the reader can expect to learn. Make it engaging and concise to hook your audience.
+                    I’m starting a focused <strong>60-day portfolio challenge</strong> to move from learning to doing — combining
+                    <strong>AWS</strong>, <strong>Generative AI</strong>, <strong>Python</strong> and practical <strong>finance</strong> projects.
+                    My goal: finish with real, deployable projects on GitHub and a portfolio site so I can apply for international remote roles
+                    like Cloud Financial Analyst, Data Analyst, or Junior ML Engineer.
                 </p>
 
-                <h3>Key Point 1: Detailed Explanation</h3>
+                <h3>What this blog will document</h3>
                 <p>
-                    Dive deeper into your first main point. Provide context, explain methodologies, and share insights. You can include code snippets (if relevant, using `<code>` tags or preformatted text), data analysis results, or theoretical explanations.
-                </p>
-                <p>
-                    For example, if this blog is about setting up your environment, you might detail specific installations or configurations.
+                    Every week I’ll publish one blog post describing what I learned, what I built, the problems I faced, and the exact
+                    commands/code I used. This post is Week 1 — the start. Future posts will include downloadable notebooks, demo GIFs,
+                    architecture diagrams, and links to live demos or screencasts.
                 </p>
 
-                <img src="https://placehold.co/800x400/D1D5DB/4B5563?text=Supporting+Image+1" alt="Supporting image for key point 1">
+                <h2>60-day headline plan (short)</h2>
+                <ol>
+                    <li>Finish <strong>AWS AI Practitioner (AIF-C01)</strong> + AWS Cloud Practitioner modules.</li>
+                    <li>Complete 3–4 beginner Coursera courses (Python, ML fundamentals, finance).</li>
+                    <li>Build and publish <strong>4 projects</strong> combining AWS + AI + finance (one end-to-end deployed).</li>
+                    <li>Polish GitHub & portfolio and apply to remote international roles.</li>
+                </ol>
 
-                <h3>Key Point 2: Practical Application or Case Study</h3>
+                <h2>This week — Week 1: setup & micro-demo</h2>
                 <p>
-                    Here, you can illustrate your second point with a practical example, a mini-case study, or a step-by-step guide. Show, don't just tell. This section is crucial for demonstrating how your knowledge translates into actionable results.
+                    Week 1 is all about setup and a tiny hands-on demo that proves the workflow: data → model → result.
+                    Below is a simple 48-hour checklist and the exact minimal code used for the demo (readers can copy it).
                 </p>
+
+                <h3>48-hour checklist (copy & run)</h3>
                 <ul>
-                    <li>List item 1: Detail a specific step or finding.</li>
-                    <li>List item 2: Add another relevant point.</li>
-                    <li>List item 3: Conclude this sub-section.</li>
+                    <li>Create these repos on GitHub: <em>Data-Driven-Wealth</em> (portfolio) and <em>forecasting-model</em>.</li>
+                    <li>Clone <em>forecasting-model</em> locally and add a repo skeleton (folders: <code>notebooks</code>, <code>data</code>, <code>src</code>, <code>demo</code>).</li>
+                    <li>Add a tiny CSV: <code>notebooks/data_sample.csv</code> (5 rows).</li>
+                    <li>Add a tiny script or notebook: <code>notebooks/01-python-basics.ipynb</code> (or <code>.py</code>).</li>
+                    <li>Push to GitHub and publish this blog post with links to your repos.</li>
                 </ul>
 
-                <h3>Key Point 3: Challenges and Solutions</h3>
+                <h3>Minimal demo code (copy-paste)</h3>
+                <p>Run this in a Python environment (or paste into a .py file). It uses a tiny sample CSV and prints RMSE:</p>
+
+                <pre class="code"><code>import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+# raw sample (we'll link it from GitHub in the week-2 post)
+df = pd.read_csv('https://raw.githubusercontent.com/manpreet199701/Data-Driven-Wealth/main/notebooks/data_sample.csv', parse_dates=['date'])
+df['month'] = df['date'].dt.month
+
+X = df[['month','feature1']].values
+y = df['target'].values
+
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=42)
+model = LinearRegression().fit(X_train, y_train)
+preds = model.predict(X_test)
+print("RMSE:", mean_squared_error(y_test, preds, squared=False))</code></pre>
+
+                <h3>Exact Week-1 deliverables (what I’ll push)</h3>
+                <ul>
+                    <li><strong>forecasting-model</strong> repo with skeleton, <code>notebooks/01-python-basics.ipynb</code> (or .py) and <code>notebooks/data_sample.csv</code>.</li>
+                    <li>Portfolio repo <a href="https://github.com/manpreet199701/Data-Driven-Wealth" target="_blank" rel="noopener noreferrer">Data-Driven-Wealth</a> updated with this Week-1 post.</li>
+                    <li>Short README with run instructions and a demo recording (or GIF).</li>
+                </ul>
+
+                <h2>How I’ll document progress</h2>
+                <p>Every project will include:</p>
+                <ul>
+                    <li>Clear README (one-line pitch, how to run, demo GIF).</li>
+                    <li>Notebook or script with code and outputs.</li>
+                    <li>Blog post explaining decisions and learnings.</li>
+                    <li>Link to deployed demo or a recorded screencast.</li>
+                </ul>
+
+                <h2>What success looks like after 60 days</h2>
+                <ul>
+                    <li>4 public GitHub projects (one fully deployed or recorded demo).</li>
+                    <li>Portfolio site with project pages and Coursera / AWS badges.</li>
+                    <li>20+ targeted job applications to remote roles with your portfolio link.</li>
+                </ul>
+
+                <h2>Share & connect</h2>
                 <p>
-                    Discuss any challenges you encountered during this week's work and how you overcame them. This adds authenticity and demonstrates problem-solving skills. It also provides valuable lessons for readers who might face similar issues.
-                </p>
-                <p>
-                    Consider linking to external resources or documentation if they were particularly helpful: <a href="https://example.com/useful-resource" target="_blank" rel="noopener noreferrer">Useful Resource Link</a>.
+                    I’ll post weekly updates here and on LinkedIn. If you’d like to follow or give feedback, find the code and notes on GitHub:
+                    <a href="https://github.com/manpreet199701/Data-Driven-Wealth" target="_blank" rel="noopener noreferrer">Data-Driven-Wealth on GitHub</a>.
                 </p>
 
-                <h2>Conclusion and Next Steps</h2>
-                <p>
-                    Summarize your key takeaways from this blog post. What did you achieve? What did you learn? Briefly touch upon how this work contributes to the overall phase and what you plan to tackle in the upcoming weeks.
+                <h3>Quick LinkedIn post (copy)</h3>
+                <p class="blog-meta" style="text-align:left; margin-top: 0.5rem;">
+                    I’m starting a 60-day portfolio challenge to build deployable AWS + GenAI + Python projects for finance. Week 1 is live — roadmap, repo skeleton and a mini demo. Follow my journey & code: <a href="https://github.com/manpreet199701/Data-Driven-Wealth" target="_blank" rel="noopener noreferrer">https://github.com/manpreet199701/Data-Driven-Wealth</a>
                 </p>
+
+                <h2>Next week — Blog 2: Python basics</h2>
                 <p>
-                    Thank you for reading! Feel free to leave comments or reach out with questions.
+                    In Blog 2 I’ll publish the full <strong>01-python-basics</strong> notebook (or a downloadable .py) and explain line-by-line what I did.
+                    That post will include the actual notebook link, instructions to run it locally, and a short screencast showing the demo running end-to-end.
+                </p>
+
+                <h2>Final note</h2>
+                <p>
+                    This is the starting point. Each week’s post will become a building block of the portfolio. Thank you for reading Data-Driven Wealth —
+                    see you next week for <em>Blog 2: Python Basics</em>.
+                </p>
+
+                <p style="text-align:center; margin-top:1.2rem;">
+                    <a class="cta" href="https://github.com/manpreet199701/Data-Driven-Wealth" target="_blank" rel="noopener noreferrer">View the GitHub repo</a>
                 </p>
             </div>
         </div>
@@ -165,6 +248,5 @@
             <p>&copy; 2025 Data-Driven Wealth. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
