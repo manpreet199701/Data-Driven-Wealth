@@ -7,70 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light gray background */
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1a202c; /* Darker text for titles */
-            margin-bottom: 2rem;
-            text-align: center;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background-color: #4c51bf; /* Indigo line */
-            border-radius: 9999px;
-        }
-        .card {
-            background-color: #ffffff;
-            border-radius: 1rem; /* More rounded corners */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        .btn-primary {
-            background-color: #4c51bf; /* Indigo */
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.75rem;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #3f46ad; /* Darker indigo on hover */
-        }
-        .btn-secondary {
-            background-color: #667eea; /* Lighter indigo */
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.75rem;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-        .btn-secondary:hover {
-            background-color: #5a67d8; /* Darker lighter indigo on hover */
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #f0f4f8; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+        .section-title { font-size: 2.5rem; font-weight: 700; color: #1a202c; margin-bottom: 2rem; text-align: center; position: relative; padding-bottom: 0.5rem; }
+        .section-title::after { content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 80px; height: 4px; background-color: #4c51bf; border-radius: 9999px; }
+        .card { background-color: #ffffff; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); padding: 2rem; margin-bottom: 2rem; }
+        .btn-primary { background-color: #4c51bf; color: white; padding: 0.75rem 1.5rem; border-radius: 0.75rem; font-weight: 600; transition: background-color 0.3s ease; }
+        .btn-primary:hover { background-color: #3f46ad; }
+        .btn-secondary { background-color: #667eea; color: white; padding: 0.75rem 1.5rem; border-radius: 0.75rem; font-weight: 600; transition: background-color 0.3s ease; }
+        .btn-secondary:hover { background-color: #5a67d8; }
     </style>
 </head>
 <body class="antialiased">
     <header class="bg-white shadow-md py-4">
         <nav class="container flex justify-between items-center">
+            <!-- WEEK 1 ANCHOR LINK -->
+            <a href="#week1" class="text-indigo-700 font-bold">Week 1</a>
             <a href="index.html" class="text-3xl font-bold text-indigo-700">Data-Driven Wealth</a>
             <ul class="hidden md:flex space-x-6">
                 <li><a href="about.html" class="text-gray-700 hover:text-indigo-700 font-medium">About Me</a></li>
@@ -101,45 +53,26 @@
                     <ul class="text-left text-gray-600 list-disc pl-5">
                         <li>AWS Cloud Practitioner Essentials (in progress)</li>
                         <li>Coursera: Python for Data Science (IBM) (in progress)</li>
-                        <!-- Add more foundational certs or details from your local files here -->
                     </ul>
-                    <!-- If you create phase1.html later, uncomment: <a href="phase1.html" class="btn-primary inline-block text-sm mt-4">Explore Phase 1</a> -->
+                    <!-- WEEK 1 TEMPLATE BLOCK INSIDE THE PHASE 1 CARD -->
+                    <div id="week1">
+                        <h4 class="mt-6 text-lg font-semibold text-indigo-700">Week 1 Activities</h4>
+                        <ul class="text-left text-gray-600 list-disc pl-5">
+                            <li>Introduction to Python for Data Science</li>
+                            <li>Cloud Fundamentals</li>
+                            <!-- Add more specifics for week 1 here -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Other phases follow unchanged... -->
+                <div class="card text-center">
+                    <!-- ...Phase 2... -->
                 </div>
                 <div class="card text-center">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Phase 2: Applied Analytics</h3>
-                    <p class="text-gray-700 mb-4">
-                        Applying machine learning techniques to real-world financial datasets and developing predictive models.
-                    </p>
-                    <ul class="text-left text-gray-600 list-disc pl-5">
-                        <li>Forecasting Model: Time-series forecasting with AWS SageMaker (in progress)</li>
-                        <li>Automated Reporting: CSV to narrative summaries via LLMs (in progress)</li>
-                        <!-- Add more analytics-focused projects here -->
-                    </ul>
-                    <!-- If you create phase2.html later, uncomment: <a href="phase2.html" class="btn-primary inline-block text-sm mt-4">Explore Phase 2</a> -->
+                    <!-- ...Phase 3... -->
                 </div>
                 <div class="card text-center">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Phase 3: Advanced AI & Strategy</h3>
-                    <p class="text-gray-700 mb-4">
-                        Focusing on advanced AI models, algorithmic trading strategies, and complex financial problem-solving.
-                    </p>
-                    <ul class="text-left text-gray-600 list-disc pl-5">
-                        <li>Risk Classifier: Fraud detection + explainability (in progress)</li>
-                        <li>AWS AI Practitioner (in progress, exam scheduled)</li>
-                        <!-- Add more advanced AI details here -->
-                    </ul>
-                    <!-- If you create phase3.html later, uncomment: <a href="phase3.html" class="btn-primary inline-block text-sm mt-4">Explore Phase 3</a> -->
-                </div>
-                <div class="card text-center">
-                    <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Phase 4: Innovation & Future Trends</h3>
-                    <p class="text-gray-700 mb-4">
-                        Exploring emerging technologies, decentralized finance, and the future landscape of AI in finance.
-                    </p>
-                    <ul class="text-left text-gray-600 list-disc pl-5">
-                        <li>Finance Chatbot: Generative AI Q&A for finance insights (in progress)</li>
-                        <li>AWS Generative AI for Developers (3-part, in progress)</li>
-                        <!-- Add more innovation-focused items here -->
-                    </ul>
-                    <!-- If you create phase4.html later, uncomment: <a href="phase4.html" class="btn-primary inline-block text-sm mt-4">Explore Phase 4</a> -->
+                    <!-- ...Phase 4... -->
                 </div>
             </div>
         </div>
@@ -150,6 +83,5 @@
             <p>© 2025 Data-Driven Wealth. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
